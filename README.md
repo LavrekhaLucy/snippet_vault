@@ -77,7 +77,10 @@ Backend: http://localhost:3000.
 * `DELETE /snippets/:id` — delete snippet
 
 ---
+##  Live Demo
 
+You can check out the live version of the project here:
+**[Snippet Vault on Vercel](https://snippet-vault-brown.vercel.app/)**
 
 ## About
 
