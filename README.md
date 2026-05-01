@@ -9,7 +9,6 @@ Simple fullstack app for storing and managing code snippets.
 * Create, edit, and delete snippets
 * Search snippets by title or tags
 * Browse with pagination
-* Use on desktop and mobile
 
 ---
 
@@ -34,10 +33,10 @@ Simple fullstack app for storing and managing code snippets.
 
 ##  Setup
 
-### 1. Clone project
+###  Clone project
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/LavrekhaLucy/snippet_vault
 cd snippet_vault
 ```
 
@@ -52,7 +51,9 @@ Create /backend/.env (based on .env.example).
 
 Create /frontend/.env (based on .env.example).
 
-Note: For Docker, your MONGODB_URI might use the service name, e.g., mongodb://mongodb:27017/snippet-manager.
+* **Choose your MongoDB source:**
+    * **For local Docker setup:** `MONGODB_URI=mongodb://mongodb:27017/Snippet_Vault`
+    * **For cloud database (MongoDB Atlas):** `MONGODB_URI=mongodb+srv://<username>:<password>@cluster0...`
 
 **Launch the environment:**
 
@@ -82,9 +83,25 @@ Backend: http://localhost:3000.
 You can check out the live version of the project here:
 **[Snippet Vault on Vercel](https://snippet-vault-brown.vercel.app/)**
 
+
+
+## Future Improvements & Technical Debt
+**Swagger API Documentation:** I didn't have enough time to integrate @nestjs/swagger for automatic documentation. In the future, I would add decorators to controllers 
+and DTOs to create an interactive sandbox for testing endpoints directly in the browser.
+
+**Postman Collection:** To improve team collaboration, it would be beneficial to create and export a Postman collection with pre-configured environments 
+(Production/Local). This would automate API testing and eliminate the need for manual cURL commands.
+
+**Advanced Validation & Typing:** While basic format checks are implemented, I planned to deepen input validation at the DTO level using class-validator. This would 
+catch type-mismatch errors (e.g., for SnippetTypeEnum) at the request initialization stage, before they reach the service logic.
+
 ## About
 
 This project was built as a test task.
 
 ## Author
 Liudmyla Lavrekha — Junior Full-Stack Developer.
+
+GitHub: https://github.com/LavrekhaLucy 
+
+LinkedIn: https://www.linkedin.com/in/liudmyla-lavrekha 
