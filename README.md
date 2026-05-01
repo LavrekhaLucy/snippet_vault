@@ -15,18 +15,15 @@ Simple fullstack app for storing and managing code snippets.
 ##  Tech Stack
 
 **Frontend:**
-
 * Next.js
 * TypeScript
 * Tailwind CSS
 
 **Backend:**
-
 * NestJS
 * Node.js
 
 **Database:**
-
 * MongoDB (local or Atlas)
 
 ---
@@ -35,11 +32,11 @@ Simple fullstack app for storing and managing code snippets.
 
 ###  Clone project
 
-```bash
+bash
+```
 git clone https://github.com/LavrekhaLucy/snippet_vault
 cd snippet_vault
 ```
-
 ---
 
 ### Installation & Setup (Docker)
@@ -57,8 +54,8 @@ Create /frontend/.env (based on .env.example).
 
 **Launch the environment:**
 
+bash
 ```
-Bash
 docker-compose up --build
 ```
 **Access the App:**
@@ -68,6 +65,53 @@ Frontend: http://localhost:3001 (or your configured port).
 Backend: http://localhost:3000.
 
 ---
+### Run Locally (Development Mode)
+If you want to modify the code and need features like Hot Reload, you should run the services manually:
+
+**Backend (NestJS)**
+
+Navigate to the backend directory:
+
+bash
+```
+cd backend
+```
+Install dependencies:
+
+bash
+```
+npm install
+```
+Start the server in watch mode:
+
+bash
+```
+npm run start:dev
+```
+The API will be available at http://localhost:3000
+
+**Frontend (Next.js)**
+
+Navigate to the frontend directory:
+
+bash
+```
+cd frontend
+```
+
+Install dependencies:
+
+bash
+```
+npm install
+```
+Start the development server:
+
+bash
+```
+npm run dev
+```
+The interface will be available at http://localhost:3001
 
 ## API
 

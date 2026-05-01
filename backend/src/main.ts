@@ -13,7 +13,7 @@ async function bootstrap() {
   }));
 
 
-  const port = process.env.PORT || 8080;
+  // const port = process.env.PORT || 8080; for deploying
 
   app.enableCors({
     origin: true,
@@ -21,9 +21,9 @@ async function bootstrap() {
     credentials: true,
   });
 
-  await app.listen(port, '0.0.0.0');
-  // console.log(`Application is running on: http://localhost:3001`);
-  console.log(`Application is running on port: ${port}`);
+  await app.listen(3001, '0.0.0.0');
+  console.log(`Application is running on: http://localhost:3001`);
+  // console.log(`Application is running on port: ${port}`);for deploying
 }
 
 bootstrap();
