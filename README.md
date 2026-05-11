@@ -139,7 +139,7 @@ and DTOs to create an interactive sandbox for testing endpoints directly in the 
 **Advanced Validation & Typing:** While basic format checks are implemented, I planned to deepen input validation at the DTO level using class-validator. This would 
 catch type-mismatch errors (e.g., for SnippetTypeEnum) at the request initialization stage, before they reach the service logic.
 
-## About
+##  About
 
 This project was built as a test task.
 
