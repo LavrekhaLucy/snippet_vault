@@ -127,6 +127,8 @@ The interface will be available at http://localhost:3001
 You can check out the live version of the project here:
 **[Snippet Vault on Vercel](https://snippet-vault-brown.vercel.app/)**
 
+> **Note:** The cloud hosting trial for the backend (API) has expired, so the live demo may have limited functionality (data fetching).
+> For a full experience, please follow the **[Setup (Docker)](#installation--setup-docker)** section to run the entire stack locally in seconds.
 
 
 ## Future Improvements & Technical Debt
